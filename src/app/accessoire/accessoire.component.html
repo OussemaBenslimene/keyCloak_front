@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="card shadow mb-4">                   
+      <div class="card-body"> 
+       <table class="table table-striped">
+          <tr> <th>Id</th><th>Nom</th> <th>Prix</th>  <th>Date Création</th> </tr>
+                <tbody *ngFor="let item of accessoires">
+                         <tr >
+                            <td>{{item.idAccessoire}}</td>
+                            <td>{{item.libAccessoire}}</td>
+                            <td>{{item.prixAccessoire}}</td>
+                            <td>{{item.dateCreation | date:'dd/MM/yyyy'}}</td>
+                          </tr>                                    
+                 </tbody>
+      </table>
+      </div>
+    </div>
+  </div> 
+  
